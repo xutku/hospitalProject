@@ -1,0 +1,70 @@
+﻿<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <button class="btn btn-primary mt-3" id="kayitAc">Kayıt Ol</button>
+                <div id="kayitForm" style="display: none;">
+                    <h2>Kayıt Ol</h2>
+                    <hr>
+                    <form>
+                        <!-- Kayıt ol formu içeriği -->
+                        <div class="mb-3">
+                            <label for="adSoyad" class="form-label">Ad Soyad</label>
+                            <input type="text" class="form-control" id="adSoyad" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tc" class="form-label">TC Kimlik Numarası</label>
+                            <input type="text" class="form-control" id="tc" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="adres" class="form-label">Adres</label>
+                            <input type="text" class="form-control" id="adres" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="sifre" class="form-label">Şifre</label>
+                            <input type="password" class="form-control" id="sifre" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <button class="btn btn-primary mt-3" id="girisAc">Giriş Yap</button>
+                <div id="girisForm" style="display: none;">
+                    <h2>Giriş Yap</h2>
+                    <hr>
+                    <form>
+                        <!-- Giriş yap formu içeriği -->
+                        <div class="mb-3">
+                            <label for="tcGiris" class="form-label">TC Kimlik Numarası</label>
+                            <input type="text" class="form-control" id="tcGiris" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="sifreGiris" class="form-label">Şifre</label>
+                            <input type="password" class="form-control" id="sifreGiris" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Giriş Yap</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('kayitAc').addEventListener('click', function () {
+            document.getElementById('kayitForm').style.display = 'block';
+            document.getElementById('girisForm').style.display = 'none';
+        });
+
+        document.getElementById('girisAc').addEventListener('click', function () {
+            document.getElementById('girisForm').style.display = 'block';
+            document.getElementById('kayitForm').style.display = 'none';
+        });
+    </script>
+
+</body>

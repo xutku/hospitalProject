@@ -1,0 +1,141 @@
+﻿<!-- Hero Start -->
+<div class="container-fluid bg-primary py-5 mb-5 hero-header">
+    <div class="container py-5">
+        <div class="row justify-content-start">
+            <div class="col-lg-8 text-center text-lg-start">
+                <h5 class="d-inline-block text-light text-uppercase  border-bottom border-5" style="border-color: rgb(0,0,0) !important;">Hoşgeldiniz, Burada Özel Sizsiniz</h5>
+                <h1 class="display-1 text-white mb-md-4">Şehrin En İyi Sağlık Çözümü </h1>
+                <div class="pt-2">
+                    <a href="/Home/Doktorlarimiz" class="btn btn-light rounded-pill py-md-3 px-md-5 mx-2">Doktor</a>
+                    <a href="/Home/Randevu" class="btn btn-outline-light rounded-pill py-md-3 px-md-5 mx-2">Randevu</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Hero End -->
+<!--Courosel kısmı başlangıç -->
+@Html.Partial("_Caurosel")
+<!-- Caurosel Start -->
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="row gx-5">
+            <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100 rounded" src="/0clone/img/about.jpg" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="mb-4">
+                    <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">İhtiyaçlarınıza Özel, Kapsamlı Sağlık Hizmetleri</h5>
+                    <h1 class="display-4">Bir Sağlık Hikayesi: İyileşme, İyilik ve İnsanlık</h1>
+                </div>
+                <p>
+                    Her hastamızın sağlık hikayesine bir sayfa eklemek için buradayız.
+                    İyileşme yolunda adımlar atarken, iyilik ve insanlık değerlerini koruyoruz. Her bir bireyin sağlığını önemsiyor, destekliyor ve onların yanında oluyoruz.
+                    Hastalarımızın sağlık yolculuklarına eşlik etmek, onların iyileşme süreçlerine destek olmak ve sağlıklarını en üst seviyeye çıkarmak için varız.
+                    Her bir hasta bizim için özeldir ve onların ihtiyaçlarına duyarlılıkla yaklaşırız.
+                </p>
+                <p>
+                    Bir sağlık hikayesi olarak, iyileşme, iyilik ve insanlık değerlerini bir araya getirerek her hastamızın hayatına dokunmayı hedefliyoruz.
+                    Sağlık yolculuğunuzda size destek olmak ve sağlığınızı en iyi şekilde yönetmek için buradayız.Sizlere en iyi sağlık hizmetini sunmak için çalışıyoruz.
+                    İyi bir sağlık hikayesi yazmak için yanınızdayız.
+                </p>
+                <div class="row g-3 pt-3">
+                    <div class="col-sm-3 col-6">
+                        <div class="bg-light text-center rounded-circle py-4">
+                            <i class="fa fa-3x fa-user-md text-primary mb-3"></i>
+                            <h6 class="mb-0">Tecrübeli<small class="d-block text-primary">Doktorlar</small></h6>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-6">
+                        <div class="bg-light text-center rounded-circle py-4">
+                            <i class="fa fa-3x fa-procedures text-primary mb-3"></i>
+                            <h6 class="mb-0">Acil<small class="d-block text-primary">Servis</small></h6>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-6">
+                        <div class="bg-light text-center rounded-circle py-4">
+                            <i class="fa fa-3x fa-microscope text-primary mb-3"></i>
+                            <h6 class="mb-0">Tanısal<small class="d-block text-primary">Testler</small></h6>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-6">
+                        <div class="bg-light text-center rounded-circle py-4">
+                            <i class="fa fa-3x fa-ambulance text-primary mb-3"></i>
+                            <h6 class="mb-0">Ambulans<small class="d-block text-primary">Hizmeti</small></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--about kısmı bitiş -->
+<!-- RandevuStart -->
+@Html.Partial("_Randevu")
+<!-- Randevu End -->
+<!-- Hastane ikonları -->
+@Html.Partial("_İkonlar")
+
+<!--Hastane ikonları bitiş-->
+<!-- Medikal Paketler Start -->
+@Html.Partial("_Paketler")
+<!-- paket End -->
+<!-- doctors slider Start -->
+@Html.Partial("_DoktorSlider")
+<!-- doctors slider End -->
+<!-- Referans Start -->
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+            <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5"> Referans</h5>
+            <h1 class="display-4">Hastalarımızın Değerli Görüşleri</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item text-center">
+                        <div class="position-relative mb-5">
+                            <img class="img-fluid rounded-circle mx-auto" src="https://thispersondoesnotexist.com/" alt="">
+                            <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 60px; height: 60px;">
+                                <i class="fa fa-quote-left fa-2x text-primary"></i>
+                            </div>
+                        </div>
+                        <p class="fs-4 fw-normal">Tavsiye Üzerine geldim, Fazlasıyla Memmunum.. Sağlıkçılarımızın emeğine sağlık bu güne onların sayesinde geldim.</p>
+                        <hr class="w-25 mx-auto">
+                        <h3>Ali Türk</h3>
+                        <h6 class="fw-normal text-primary mb-3">Avukat</h6>
+                    </div>
+
+                    <div class="testimonial-item text-center">
+                        <div class="position-relative mb-5">
+                            <img class="img-fluid rounded-circle mx-auto" src="/0clone/img/testimonial-3.jpg" alt="">
+                            <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 60px; height: 60px;">
+                                <i class="fa fa-quote-left fa-2x text-primary"></i>
+                            </div>
+                        </div>
+                        <p class="fs-4 fw-normal">Tavsiye Üzerine geldim, Fazlasıyla Memmunum.. Sağlıkçılarımızın emeğine sağlık bu güne onların sayesinde geldim.</p>
+                        <hr class="w-25 mx-auto">
+                        <h3>Can Tane</h3>
+                        <h6 class="fw-normal text-primary mb-3">Avukat</h6>
+                    </div>
+                    <div class="testimonial-item text-center">
+                        <div class="position-relative mb-5">
+                            <img class="img-fluid rounded-circle mx-auto" src="https://thispersondoesnotexist.com/" alt="">
+                            <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 60px; height: 60px;">
+                                <i class="fa fa-quote-left fa-2x text-primary"></i>
+                            </div>
+                        </div>
+                        <p class="fs-4 fw-normal">10 Yıldır geçmeyen diz ağrım şiddetlenmişti, Ortopedi Uzmanımız sayesinde olduğum ameliyat başarılı geçti ve artık çok daha sağlıklıyım.</p>
+                        <hr class="w-25 mx-auto">
+                        <h3>Aliye  Türk</h3>
+                        <h6 class="fw-normal text-primary mb-3">Ev Hanımı</h6>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Referans End -->
